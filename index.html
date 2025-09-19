@@ -1,11 +1,93 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="Pt-Br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Museu Interativo da Tecnologia”</title>
 </head>
 <body>
+    <header class="header">
+    <h1>História da Tecnologia”</h1>
+    <nav class="nav">
+        <a href="">Inicio</a>
+        <a href="">Historia</a>
+        <a href="">Galeria</a>
+        <a href="">Agendamento</a>
+    </nav>
+</header>
+
+    <main>
+        <h1>História da Tecnologia</h1>
+         <p>A história da tecnologia acompanha a própria trajetória da humanidade. Desde a pré-história, o ser humano buscou criar ferramentas para facilitar sua sobrevivência. A descoberta do fogo, a invenção da roda e o uso de metais marcaram os primeiros grandes avanços, permitindo a construção de sociedades mais organizadas e produtivas. Essas invenções simples abriram caminho para o desenvolvimento da agricultura, do comércio e da comunicação primitiva.</p>
+
+         <p>Com o passar dos séculos, a tecnologia se tornou cada vez mais sofisticada. Durante a Revolução Industrial, nos séculos XVIII e XIX, surgiram as máquinas a vapor, as ferrovias e a produção em larga escala, transformando radicalmente o modo de vida das pessoas. Foi nesse período que nasceram os primeiros avanços da eletricidade, da química e da mecânica moderna, inaugurando uma era de grandes descobertas científicas que ampliaram a capacidade de produção e aceleraram o crescimento das cidades.</p>
+        <p>No século XX e início do XXI, a evolução tecnológica se intensificou ainda mais com a chegada da eletrônica, da informática e da internet. Computadores, satélites, telefones celulares e inteligência artificial se tornaram parte fundamental da vida cotidiana, conectando pessoas e possibilitando avanços em áreas como saúde, transporte, comunicação e exploração espacial. Hoje, a tecnologia continua a evoluir em ritmo acelerado, moldando o presente e apontando novos caminhos para o futuro da humanidade.</p>
+
+        <h2 class="gallery">Galeria de Invenções”</h2>
+    <div class="grid">
+    <div class="slot">foto 1</div>
+    <div class="slot">foto 2</div>
+    <div class="slot">foto 3</div>
+    <div class="slot">foto 4</div>
+    <div class="slot">foto 5</div>
+    <div class="slot">foto 6</div>
+</div>
+
+       <h3 class="visit">Agendamento de visitas</h3>
+    <form class="formulary">
+        <div>
+            <label for="name">Nome completo</label>
+            <input type="text" id="name" name="nome">
+        </div><br>
+
+        <div>
+            <label for="email">E-mail</label>
+            <input type="text" id="email" name="email">
+        </div><br>
+
+        <div>
+            <label for="phone">Telefone</label>
+            <input type="tel" id="phone" name="phone">
+        </div><br>
+
+        <div>
+        <label>Qual é o seu perfil de visitante?</label>
+        <div class="radio-group">
+            <label for="estuding"> <input type="radio" id="studing" name="perfil-visitor" value="estudante"> Estudante</label><br>
+       
+        <label for="enthusiast"><input type="radio" id="enthusiast" name="perfil-visitor" value="entusiasta"> Entusiasta de tecnologia</label><br>
+
+        <label for="visitor"><input type="radio" id="visitor" name="perfil-visitor" value="visitante"> Visitante</label><br>
+
+        <label for="profissional"><input type="radio" id="profissional" name="perfil-visitor" value="profissional"> Profissional da área</label><br>
+
+        <label for="tourist"><input type="radio" id="tourist" name="perfil-visitor" value="turista"> Turista</label><br><br>
+<div>
+        <label for="faixa-etaria">Faixa-etaria</label>
+        <select name="faixa-etaria" id="faixa-etaria">
+            <option value="menos-18">Menos de 18 anos</option>
+            <option value="18-24">18 a 24 anos</option>
+            <option value="25-34">25 a 34 anos</option>
+            <option value="35-44">35 a 44 anos</option>
+            <option value="45-54">45 a 54 anos</option>
+            <option value="55-64">55 a 64 anos</option>
+            <option value="65-mais">65 anos ou mais</option>
+        </select>
+    </div>
+
+         <label for="message">Mensagem adicional (Opcional):</label>
+         <textarea name="message" id="message" rows="5" placeholder="Tem alguma pergunta ou observação sobre sua visita? Escreva aqui."></textarea>
+
+         <input type="submit" value="Enviar">
+         <input type="reset" value="Limpar">
+        </div>
+     </div>
+
+     
+        
     
+    </form>
+    </main>
+    <footer></footer>
 </body>
 </html>
