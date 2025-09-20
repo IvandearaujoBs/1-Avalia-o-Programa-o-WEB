@@ -1,0 +1,97 @@
+html {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #e0dddd;
+    overflow-x: hidden;
+    height: 100%;
+    margin: 0;
+}
+.content-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+
+img, video {
+    max-width: 100%;
+    height: auto;
+}
+
+.header {
+    display: flex;
+    background-color: #2c3e50;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    align-items: center;
+}
+
+.title {
+    color: white;
+}
+
+.nav {
+    margin-left: auto;
+    text-align: right;
+    padding: 22px;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    border: 1px solid #000;
+    padding: 10px 15px;
+    border-radius: 10px;
+    margin-left: 15px;
+}
+
+main {
+    margin-top: 40px;
+}
+
+main h1 {
+    text-align: center;
+    margin-top: 50px;
+}
+
+main h2 {
+    text-align: center;
+}
+
+main p {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.grid {
+    display: grid;
+    grid-template-columns:repeat(3, 1fr) ;
+    gap: 20px;
+    justify-content: center;
+}
+
+.slot {
+    border: 1px solid #000;
+    border-radius: 5px;
+    background-color: #2c3e500c;
+}
+
+.visit {
+    text-align: center;
+}
+ .formulary {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+ }
+
+ .footer {
+    background-color: #2c3e50;
+ }
