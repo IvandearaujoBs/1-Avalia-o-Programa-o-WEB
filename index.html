@@ -84,34 +84,35 @@
 
        <h3 class="visit">Agendamento de visitas</h3>
     <form class="formulary">
-        <div>
+        <div class="form-group">
             <label for="name">Nome completo</label>
             <input type="text" id="name" name="nome">
-        </div><br>
+        </div>
 
-        <div>
+        <div class="form-group">
             <label for="email">E-mail</label>
             <input type="text" id="email" name="email">
-        </div><br>
+        </div>
 
-        <div>
+        <div class="form-group">
             <label for="phone">Telefone</label>
             <input type="tel" id="phone" name="phone">
-        </div><br>
+        </div>
 
-        <div>
+        <div class="profile-visit">
         <label>Qual é o seu perfil de visitante?</label>
         <div class="radio-group">
-            <label for="estuding"> <input type="radio" id="studing" name="perfil-visitor" value="estudante"> Estudante</label><br>
+        <label for="estuding"> <input type="radio" id="studing" name="perfil-visitor" value="estudante"> Estudante</label>
        
-        <label for="enthusiast"><input type="radio" id="enthusiast" name="perfil-visitor" value="entusiasta"> Entusiasta de tecnologia</label><br>
+        <label for="enthusiast"><input type="radio" id="enthusiast" name="perfil-visitor" value="entusiasta"> Entusiasta de tecnologia</label>
 
-        <label for="visitor"><input type="radio" id="visitor" name="perfil-visitor" value="visitante"> Visitante</label><br>
+        <label for="visitor"><input type="radio" id="visitor" name="perfil-visitor" value="visitante"> Visitante</label>
 
-        <label for="profissional"><input type="radio" id="profissional" name="perfil-visitor" value="profissional"> Profissional da área</label><br>
+        <label for="profissional"><input type="radio" id="profissional" name="perfil-visitor" value="profissional"> Profissional da área</label>
 
-        <label for="tourist"><input type="radio" id="tourist" name="perfil-visitor" value="turista"> Turista</label><br><br>
-<div>
+        <label for="tourist"><input type="radio" id="tourist" name="perfil-visitor" value="turista"> Turista</label>
+
+<div class="form-group">
         <label for="faixa-etaria">Faixa-etaria</label>
         <select name="faixa-etaria" id="faixa-etaria">
             <option value="menos-18">Menos de 18 anos</option>
@@ -123,12 +124,15 @@
             <option value="65-mais">65 anos ou mais</option>
         </select>
     </div>
-
+    <div class="form-group">
          <label for="message">Mensagem adicional (Opcional):</label>
          <textarea name="message" id="message" rows="5" placeholder="Tem alguma pergunta ou observação sobre sua visita? Escreva aqui."></textarea>
+        </div>
 
+        <div class="form-buttons">
          <input type="submit" value="Enviar">
          <input type="reset" value="Limpar">
+        </div>
         </div>
      </div>
     </form>
