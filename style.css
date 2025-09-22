@@ -28,6 +28,8 @@ img, video {
     width: 100%;
     align-items: center;
     z-index: 1000;
+    flex-wrap: wrap;
+    padding: 10px 0;
 }
 .header h1 {
     color: white;
@@ -72,7 +74,7 @@ img, video {
 }
 
 main {
-    margin-top: 80px;
+margin-top: 120px;
     margin-bottom: 50px;
 }
 
@@ -88,10 +90,11 @@ main p {
 .history-text {
     text-align: justify;
     text-indent: 3px;
+    padding: 8px;
 }
 
 .history-text h1 {
-    transform: translateY(15px);
+    transform: translateY(-5px);
 }
 
 .grid {
@@ -291,15 +294,20 @@ text-align: center;
 }
 
 /* Layout para telas de celular (mobile) */
-@media (max-width: 480px) {
-
+@media screen and (max-width: 480px) {
     .header {
         flex-direction: column;
         justify-content: center;
         padding: 10px 0;
+        height: auto;
+        align-items: center;
     }
+ 
+    .history-text {
+         padding-top: 120px;
 
-        .header h1 {
+    }
+    .header h1 {
         margin: 0 0 10px 0;
         text-align: center;
         font-size: 1.5rem;
@@ -309,13 +317,13 @@ text-align: center;
         grid-template-columns: 1fr;
     }
     .nav {
-   display: flex;
+        display: flex;
         flex-wrap: wrap;
         justify-content: center;
         gap: 8px;
         margin-left: 0;
         padding: 0 10px;
-        width: 100%;
+        width:100%;
     }
 
     .nav a {
@@ -326,10 +334,15 @@ text-align: center;
         font-size: 12px;
         margin: 0;
         flex: 1;
-        max-width: 110px;
+        max-width: 90px;
     }
 
     .footer-top .container {
         grid-template-columns: 1fr;
     }
+
+    header .logo {
+        width: 40px;
+        margin-right: 10px; }
 }
+
