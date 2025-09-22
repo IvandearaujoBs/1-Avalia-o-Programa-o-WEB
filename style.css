@@ -91,6 +91,10 @@ main p {
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     text-align: left;
 }
+
+.history-text p {
+    text-align: justify;
+}
 .history-text {
     text-align: justify;
     text-indent: 3px;
@@ -263,7 +267,7 @@ text-align: center;
     border-top: 1px solid #444;
 }
 
-/* Layout para telas de tablet */
+
 @media (max-width: 768px) {
     .header {
         display: flex;
@@ -305,7 +309,7 @@ text-align: center;
     }
 }
 
-/* Layout para telas de celular (mobile) */
+
 @media screen and (max-width: 480px) {
     .header {
         flex-direction: column;

@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="image/redimensionada.png" type="image/x-icon">
 </head>
-<body>
+<body id="inicio">
     <div class="content-wrapper">
         <header class="header">
         <img src="image/redimensionada.png" alt="logo" width="100" class="logo">
@@ -22,16 +22,16 @@
         </header>
 
 
-        <main class="history-text" id="inicio">
+        <main class="history-text" id="historia">
             <h1>História da Tecnologia</h1>
 
             <p id="historia">A história da tecnologia acompanha a própria trajetória da humanidade. Desde a pré-história, o ser humano buscou criar ferramentas para facilitar sua sobrevivência. A descoberta do fogo, a invenção da roda e o uso de metais marcaram os primeiros grandes avanços, permitindo a construção de sociedades mais organizadas e produtivas. Essas invenções simples abriram caminho para o desenvolvimento da agricultura, do comércio e da comunicação primitiva.</p>
             <p>Com o passar dos séculos, a tecnologia se tornou cada vez mais sofisticada. Durante a Revolução Industrial, nos séculos XVIII e XIX, surgiram as máquinas a vapor, as ferrovias e a produção em larga escala, transformando radicalmente o modo de vida das pessoas. Foi nesse período que nasceram os primeiros avanços da eletricidade, da química e da mecânica moderna, inaugurando uma era de grandes descobertas científicas que ampliaram a capacidade de produção e aceleraram o crescimento das cidades.</p>
             <p>No século XX e início do XXI, a evolução tecnológica se intensificou ainda mais com a chegada da eletrônica, da informática e da internet. Computadores, satélites, telefones celulares e inteligência artificial se tornaram parte fundamental da vida cotidiana, conectando pessoas e possibilitando avanços em áreas como saúde, transporte, comunicação e exploração espacial. Hoje, a tecnologia continua a evoluir em ritmo acelerado, moldando o presente e apontando novos caminhos para o futuro da humanidade.</p>
 
-            <h2 class="gallery">Galeria de Invenções</h2>
+            <h2 class="gallery" id="galeria">Galeria de Invenções</h2>
             <div class="grid">
-                <div class="slot" id="galeria">
+                <div class="slot">
                     <figure>
                         <img src="image/1-Pascalina.webp" alt="1-Pascalina" width="400">
                         <figcaption><strong>A MÁQUINA PASCALINA</strong><br>As primeiras "tecnologias" para cálculo, como o ábaco e as máquinas de Pascal, lançaram as bases para a automação.</figcaption>
@@ -46,8 +46,8 @@
                 <div class="slot" id="galeria-2">
                     <figure>
                         <img src="image/3-comp sec20.jpg" alt="computador" width="400">
-                        <figcaption><strong>COMPUTADORES PESSOAIS</strong></figcaption><br>Embora o primeiro microprocessador comercial, o Intel 4004, tenha sido lançado em 1971, foi a partir de meados da década de 70, com o surgimento de microprocessadores mais poderosos (como o Intel 8080 e o MOS Technology 6502) e o lançamento de computadores pessoais como o Altair 8800 (1975), Apple II (1977) e o TRS-80 (1977), que essa acessibilidade começou a se tornar uma realidade.
-                    </figure>
+                        <figcaption><strong>COMPUTADORES PESSOAIS</strong><br><p>Embora o primeiro microprocessador comercial, o Intel 4004, tenha sido lançado em 1971, foi a partir de meados da década de 70, com o surgimento de microprocessadores mais poderosos (como o Intel 8080 e o MOS Technology 6502) e o lançamento de computadores pessoais como o Altair 8800 (1975), Apple II (1977) e o TRS-80 (1977), que essa acessibilidade começou a se tornar uma realidade.
+                    <p></figcaption></p></figure>
                 </div>
                 <div class="slot" id="galeria-3">
                     <figure>
@@ -81,8 +81,26 @@
                 </div>
                 <div class="form-group">
                     <label for="phone"><strong>Telefone</strong></label>
-                    <input type="tel" id="phone" name="phone" placeholder="(  ) xxxxx-xxxx">
-                </div>
+                    <input type="tel" id="phone" name="phone" placeholder="(00) 00000-0000" maxlength="15">
+    </div>
+</form>
+
+<script>
+document.getElementById('phone').addEventListener('input', function(e) {
+    let value = e.target.value.replace(/\D/g, ""); 
+    if (value.length > 11) value = value.slice(0, 11);
+
+    if (value.length > 6) {
+        e.target.value = `(${value.slice(0,2)}) ${value.slice(2,7)}-${value.slice(7)}`;
+    } else if (value.length > 2) {
+        e.target.value = `(${value.slice(0,2)}) ${value.slice(2)}`;
+    } else {
+        
+        e.target.value = value;
+    }
+});
+</script>
+
 
                 <div class="profile-visit">
                     <label><strong>Qual é o seu perfil de visitante?</strong></label>
