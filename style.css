@@ -36,8 +36,12 @@ img, video {
     display: flex;
     color: white;
     text-align: center;
-    margin-left: 9%;
 
+}
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
 .nav {
@@ -94,7 +98,7 @@ main p {
 .history-text {
     text-align: justify;
     text-indent: 3px;
-    padding: 8px;
+    padding: 50px;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
@@ -279,7 +283,6 @@ text-align: center;
           display: flex;
         align-items: center;
         text-align: center;
-        
     }
 
     .nav {
@@ -307,55 +310,91 @@ text-align: center;
 
 /* Layout para telas de celular (mobile) */
 @media screen and (max-width: 480px) {
+    main {
+         margin-top: 200px !important;
+        padding-top: 30px !important; 
+    }
+    
+     body {
+        padding-top: 150px;}
+
     .header {
         flex-direction: column;
         justify-content: center;
-        padding: 10px 0;
+        padding: 15px 0;
         height: auto;
         align-items: center;
-
-       
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1000; 
     }
  
     .history-text {
-         padding-top: 120px;
-
+          text-align: justify !important;
+        padding: 0 15px; 
     }
-    .header h1 {
-        margin: 0 0 10px 0;
+
+    .logo-container {
+        flex-direction: column;
         text-align: center;
-        font-size: 1.5rem;
-        align-items: center;
-        
+        width: 100%;
+        justify-content: center;
+    }
+    .history-text h1 {
+        text-align: center !important;
+        margin-bottom: 20px !important;
+    }
+    
+    .history-text p {
+        text-align: justify !important;
+        width: 100% !important;
+    }
+
+    .header h1 {
+        text-align: center !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        margin: 10px auto !important;
+        display: block;
+        width: 100%;
+        color: rebeccapurple;
+    }
+
+    .logo {
+       margin: 0 auto;
     }
 
     .grid {
         grid-template-columns: 1fr;
     }
+    
     .nav {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+        align-items: center;
         gap: 8px;
-        margin-left: 0;
-        padding: 0 10px;
-        width:100%;
+        margin: 0 !important;
+        padding:  10px;
+        width:100px;
+        margin-left: 0 !important;
     }
 
     .nav a {
-        width: auto;
-        min-width: 70px;
-        text-align: center;
-        padding: 6px 8px;
-        font-size: 12px;
-        margin: 0;
         flex: 1;
-        max-width: 90px;
+        width: auto;
+        text-align: center;
+        margin: 0;
+        padding: 8px 10px;
+        font-size: 13px;
+        min-width: 65px;
     }
 
     .footer-top .container {
         grid-template-columns: 1fr;
     }
-
 }
+
 
