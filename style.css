@@ -1,5 +1,5 @@
 html {
-    scroll-padding-top: 0px;
+    scroll-padding-top: 210px;
 }
 
 body {
@@ -276,11 +276,11 @@ text-align: center;
     }
     .logo {
         display: flex;
-        margin-top: 30px;
+        margin-top: 0px;
     }
 
     .header h1 {
-          display: flex;
+        display: flex;
         align-items: center;
         text-align: center;
         
@@ -318,11 +318,10 @@ text-align: center;
         height: auto;
         align-items: center;
 
-       
     }
- 
+
     .history-text {
-         padding-top: 120px;
+        padding-top: 120px;
 
     }
     .header h1 {
